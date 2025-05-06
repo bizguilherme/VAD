@@ -1,0 +1,321 @@
+---
+author:
+- Guilherme Biz
+title: "**Probabilidade**"
+---
+
+::: frame
+Introdução
+
+- Até poucos séculos atrás, tudo que tivesse relação com o acaso era
+  visto como intensão divina e, portanto, era considerado ímpio tentar
+  analisar o "mecanismo do sobrenatural" por meio da matemática.
+
+- A teoria da probabilidade começou a ser utilizada nos estudos das leis
+  da natureza somente quando teve o pensamento científico com ênfase em
+  observações e experimentação.
+
+- **Experimentos aleatórios**: são experimentos que, quando repetidos em
+  condições similares, dão resultados geralmente diferentes.
+:::
+
+::: frame
+### Exemplos de fenômenos aleatórios
+
+- Produção por hectare de uma linhagem de feijão.
+
+- Germinação de sementes.
+
+- Sobrevivência de enxertos.
+
+- Número de plantas numa determinada área.
+
+- Cor da flor resultante de um cruzamento entre duas plantas.
+
+Com os fenômenos aleatórios e com o surgimento da teoria da
+probabilidade, foi possível criar as distribuições de probabilidades
+para os fenômenos aleatórios da natureza.
+:::
+
+::: frame
+### Conceito de probabilidade
+
+- Conceitos probabilísticos são necessários para estudar fenômenos
+  aleatórios, isto é, situações em que resultados possíveis são
+  conhecidos, mas não se pode saber a priori qual deles ocorrerá.
+
+- Caso os fenômenos estudados, repetidos sob as mesmas condições
+  iniciais, levem sempre ao mesmo resultado, eles são chamados de
+  determinísticos.
+
+- **Definição:** Se há $n$ possibilidades igualmente prováveis, das
+  quais uma deve ocorrer, e $s$ são consideradas como favoráveis, ou
+  então um "sucesso", a probabilidade de um "sucesso" é de
+  $\frac{s}{n}$.
+:::
+
+::: frame
+### Experimento Aleatório
+
+- São fenômenos que, mesmo repetidos várias vezes sob mesmas condições,
+  apresentam resultados imprevisíveis, ou seja, o fenômeno acusa
+  variabilidade em seus resultados.
+
+  1.  O lançamento de uma moeda.
+
+  2.  Lançar três moedas justas e observar as faces voltadas para cima.
+
+  3.  Lançar um dado e observar a face voltada para cima.
+:::
+
+::: frame
+### Espaço Amostral - $\Omega$
+
+- O conjunto de todos os resultados possíveis de um experimento
+  aleatório é chamado de espaço amostral.
+
+  1.  $\Omega=\left\{c,k\right\}$ em que $c=$cara e $k=$coroa.
+
+  2.  $\Omega=\left\{ccc,cck,ckc,kcc,ckk,kck,kkc,kkk\right\}$.
+
+  3.  $\Omega=\left\{1,2,3,4,5,6\right\}$.
+:::
+
+::: frame
+### Evento
+
+- É qualquer subconjunto do espaço amostral. Aqui, um subconjunto
+  significa qualquer parte de um conjunto, inclusive o próprio conjunto
+  como um todo e o conjunto vazio, denotado por $\varnothing$, que não
+  contém elemento algum. Denotamos os eventos por letras maiúsculas, A,
+  B, C\....
+
+  1.  $A=\left\{ \varnothing \right\}$; $B=\left\{c\right\}$;
+      $C=\left\{k\right\}$ e $D=\left\{c,k\right\}$.
+
+  2.  $A=\left\{ccc\right\}$; $B=\left\{kcc,kkc\right\}$;
+      $C=\left\{kkk\right\}$.
+
+  3.  $A=\left\{2\right\}$; $B=\left\{4,5,6\right\}$;
+      $C=\left\{2,4,6\right\}$.
+:::
+
+::: frame
+### Diagrama de Venn
+
+- Uma forma de ilustrar o espaço amostral, eventos e possíveis
+  resultados, é pelo Diagrama de Venn.
+
+- Conceito clássico de probabilidade.
+  $$P(A)=\frac{\mbox{Número de resultados favoráveis a A}}{\mbox{Número de resultados possíveis}}.$$
+:::
+
+::: frame
+### Operação com Eventos
+
+- **União de eventos:** união de A e B equivale à ocorrência de A, ou de
+  B, ou ambos. ($A \cup B$)
+
+- **Interseção de eventos:** A interseção de dois eventos A e B, é o
+  evento que consiste de todos os elementos contidos simultaneamente em
+  A e em B. ($A \cap B$)
+:::
+
+::: frame
+- **Eventos disjuntos:** Dois eventos A e B, dizem-se disjuntos ou
+  mutuamente exclusivos, quando a ocorrência de um deles impossibilita a
+  ocorrência do outro. Os dois eventos não tem elementos em comum.
+  ($A\cap B$)
+
+- **Complemento:** Seja A um evento, logo o complementar de A,
+  $(A', A^c\ \ \mbox{ou}\ \ \bar{A})$, é o evento que consiste todos os
+  elementos do espaço amostral que **não estão contidos em A**.
+  $$A^c\Rightarrow\left\{\begin{array}{c}
+  A^c\cup A = \Omega\\
+  A^c \cap A = \varnothing
+  \end{array}\right.$$
+:::
+
+::: frame
+### Propriedades da Probabilidade
+
+- $0\leq P(A) \leq1$.
+
+- $P(\Omega)=1$
+
+- $P(\varnothing)=0$
+:::
+
+::: frame
+### Propriedades de cálculo de probabilidade
+
+- Seja A e B dois eventos. Logo, $$P(A\cup B)=P(A)+P(B)-P(A\cap B),$$
+  $$P(A\cup A^c)=P(\Omega)=1=P(A)+P(A^c),$$ $$P(A^c)=1-P(A).$$
+
+- Se A e B forem disjuntos (mutuamente exclusivos), têm-se
+  $P(A\cap B)=0$, então $$P(A\cup B)=P(A)+P(B).$$
+:::
+
+::: frame
+### Exemplos
+
+- **Exemplo 2:** Lançar um dado e observar a face voltada para cima.
+  Sejam os eventos: A - o resultado ser ímpar; B - ser menor ou igual a
+  3; C - ser maior que 2 ; D - ser primo. Calcule:
+
+  ::: multicols
+  2
+
+  1.  $P(A)$
+
+  2.  $P(B)$
+
+  3.  $P(A\cup D)$
+
+  4.  $P(A^c\cap D)$
+  :::
+:::
+
+::: frame
+- **Exemplo 3:** Um barracão contém sete sacos de sementes tratados e
+  três não tratados. Escolhemos 4 sacos ao acaso, de modo que a ordem
+  seja irrelevante. Qual é a probabilidade de ter dois sacos não
+  tratados?
+:::
+
+::: frame
+### Generalização da regra da adição
+
+- Se $k$ eventos são mutuamente excludentes, a probabilidade de
+  ocorrência de um deles é igual à soma de suas probabilidades
+  individuais.
+  $$P(A_1\cup A_2 \cup...\cup A_k)=P(A_1)+P(A_2)+...+P(A_k),$$ para
+  quaisquer eventos mutuamente excludentes
+  $A_1,\ A_2,...\mbox{e}\ \ A_k$.
+
+- **Exemplo 4:** As probabilidades de um serviço de teste do consumidor
+  classificar uma nova máquina fotográfica como ruim, razoável, boa,
+  muito boa e excelente são 0,07; 0,16; 0,34; 0,32 e 0,11. Qual é a
+  probabilidade de a nova máquina ser classificada como boa, muito boa
+  ou excelente?
+:::
+
+::: frame
+- **Exemplo 5:** Suponhamos que um instituto de pesquisa de consumidores
+  tenha estudado os serviços prestados dentro da garantia por 200 lojas
+  de implementos agrícolas:
+
+  $$\begin{tabular}{c|cc|c}\hline
+   Lojas & Bom serviço  &  Serviço deficiente & Total\\ 
+         &   dentro da garantia & dentro da garantia \\ \hline
+  Especializada     & 64 & 16 & 80 \\
+  Não especializada & 42 & 78 & 120 \\ \hline
+  Total & 106 & 94 & 200 \\\hline
+  \end{tabular}$$
+:::
+
+::: frame
+- Dado que:
+
+  - $N$ é o evento escolher uma loja especializada na marca.
+
+  - $G$ é o evento escolher uma loja que preste bons serviços dentro da
+    garantia.
+
+  - $N\cap G$ é o evento escolher uma loja especializada numa marca que
+    preste bons serviços dentro da garantia.
+
+  Caso seja selecionado uma dessas 200 lojas aleatoriamente, qual a
+  probabilidade de cada um desses eventos?
+
+- Se limitamos a lojas especializadas numa marca, estamos reduzindo o
+  espaço amostral para 80 lojas. Qual a probabilidade de escolher uma
+  loja que preste bons serviços dentro da garantia, dado que é uma loja
+  especializada numa marca?
+:::
+
+::: frame
+### Probabilidade Condicional
+
+- **Definição:** Se $P(B)$ é diferente de zero, então a probabilidade
+  condicional de $A$ em relação a $B$, isto é, a probabilidade de $A$
+  dado $B$ é: $$P(A|B)=\frac{P(A\cap B)}{P(B)}$$
+
+- Com referência às lojas de implementos agrícolas, qual é a
+  probabilidade de uma loja que não é especializada numa marca prestar
+  bons serviços sob garantia?
+:::
+
+::: frame
+- **Exemplo 6:** Em uma fábrica de parafusos, as máquinas A, B e C
+  produzem 25%, 35% e 40% do total, respectivamente. Da produção de cada
+  máquina 5%, 4% e 2%, respectivamente, são parafusos defeituosos.
+  Escolhe-se ao acaso um parafuso e verifica-se que é defeituoso. Qual a
+  probabilidade de que o parafuso venha da máquina A? da B? e da C?.
+:::
+
+::: frame
+### Eventos independentes
+
+- Se A e B são eventos independentes, então
+
+  $$P(A\cap B)=P(A)P(B)$$
+
+- **Exemplo 7:** Confira cada par de eventos dados a seguir quanto à
+  independência
+
+  1.  Eventos A e B para os quais $P(A)=0,40$, $P(B)=0,90$ e
+      $P(A\cap B)=0,36$.
+
+  2.  Eventos C e D para os quais $P(C)=0,75$, $P(D)=0,80$ e
+      $P(C\cap D^c)=0,15$
+
+  3.  Eventos E e F para os quais $P(E)=0,30$, $P(F)=0,35$ e
+      $P(E^c\cap F^c)=0,4$.
+:::
+
+::: frame
+- **Exemplo 8:** A probabilidade de que A resolva um problema é de
+  $\frac{2}{3}$, e a probabilidade de que B o resolva é de
+  $\frac{3}{4}$. Se ambos tentarem independentemente, qual a
+  probabilidade de o problema ser resolvido?
+:::
+
+::: frame
+### Teorema de Bayes
+
+- Uma das relações mais importantes envolvendo probabilidade
+  condicionais é dada pelo teorema de Bayes. A versão mais simples desse
+  teorema é dada por:
+  $$P(A|B)=\frac{P(A\cap B)}{P(B)}=\frac{P(A)P(B|A)}{P(B)}$$
+:::
+
+::: frame
+- **Exemplo 9:** Temos três profissionais: um agrônomo, um biólogo e um
+  engenheiro civil. Cada um deles plantou dez mudas de álamos em vasos
+  numa casa de vegetação. Sobreviveram nove das plantadas pelo agrônomo;
+  cinco pelo biólogo e duas pelo engenheiro civil. Dos trinta vasos,
+  escolhe-se um ao acaso, e verifica-se se a muda sobreviveu. Se ela
+  sobreviveu, qual a probabilidade de ela ter sido plantada pelo
+  engenheiro civil?
+:::
+
+::: frame
+### Teorema de Bayes
+
+- A probabilidade de ocorrência do evento $C_i$, supondo-se a ocorrência
+  do evento A, é dada por:
+
+  $$P(C_i|A)=\frac{P(C_i)P(A|C_i)}{\sum_{j=1}^n P(C_j)P(A|C_j)}$$ para
+  todo $i=1,2,...,n$.
+:::
+
+::: frame
+- **Exemplo 10:** Numa fábrica de inseticidas, as linhas de produção A,
+  B e C respondem por 50, 30 e 20% da produção total. Se 0,4% dos
+  recipientes de inseticidas da linha A são lacrados inadequadamente e
+  as percentagens correspondentes às linhas B e C são de 0,6% e 1,2%,
+  respectivamente, qual é a probabilidade de um recipiente lacrado
+  impropriamente (descoberta na inspeção final de produtos prontos)
+  provir da linha de produção A?
+:::
