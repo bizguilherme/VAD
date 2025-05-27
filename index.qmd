@@ -7,4 +7,401 @@ footer: "<gbiz@uel.br>"
 code-fold: true
 ---
 
-## Indrodução
+### Introdução - Variáveis aleatórias
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Quantidades associadas aos possíveis resultados de um experimento aleatório são denominadas de **variáveis aleatórias**.
+
+    <br>
+
+-   **Definição**: Uma variável aleatória é uma função que associa, a cada ponto pertencente a um espaço amostral, um único número real.
+:::
+
+------------------------------------------------------------------------
+
+### Exemplos
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+a.  O número de plantas sadias colhidas na área útil de uma parcela.
+
+b.  O número de insetos capturados numa armadilha.
+
+c.  O número de dias da emergência à floração.
+
+d.  Rendimento de grãos de híbridos de milho.
+
+e.  Altura de plantas.
+
+f.  O nível de água em uma represa num dados instante.
+
+g.  O número de primogênitos do sexo masculino em dez famílias.
+:::
+
+------------------------------------------------------------------------
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Nos exemplos $a$, $c$ e $g$ os valores assumidos pelas variáveis correspondentes pertencem a um conjunto finito de inteiros não negativos.
+
+-   No exemplo $b$ o conjunto de valores que a variável assume é o conjunto dos inteiros não negativos, que é enumerável e infinito.
+
+-   Nos exemplos $d$, $e$ e $f$ os valores das variáveis aleatórias podem ser qualquer real não negativo.
+
+<br>
+
+-   **Definição:** As variáveis aleatórias que assumem valores em um conjunto enumerável serão denominadas discretas e aquelas que assumem valores num intervalo da reta real serão denominadas contínuas.
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição de probabilidade de variáveis aleatórias discretas
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição:** A distribuição de probabilidade de uma variável aleatória discreta $X$, definida em um espaço amostral $\Omega$, é uma "tabela" que associa a cada valor de $X$ sua probabilidade.
+
+<br>
+
+-   **Exemplo 1**: Uma moeda é lançada duas vezes sobre uma superfície plana. Seja $X$ a função definida no espaço amostral que é igual ao número de caras nos dois lançamentos. A distribuição de probabilidade desta v.a. (X) é:
+:::
+
+------------------------------------------------------------------------
+
+### Exemplo
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Exemplo 2**: Três sementes são retiradas de uma nova produção de híbridos. Cada semente pode ser classificada como boa (B), se germinar, ou defeituosa (D), se não germinar. Seja Y a variável aleatória que representa o número de sementes defeituosas entre as três selecionadas. Suponha que a proporção de sementes boas produzidas seja de 0,9 e que as retiradas são independentes entre si.
+
+Determine a distribuição de probabilidade da variável aleatória Y.
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição**: Chama-se função de probabilidade da v.a. discreta $X$, que assume os valores $x_1,x_2,...,x_n,...$, a função $\{(x_i,p(x_i)), i=1,2,...\}$, que a cada valor de $x_i$ associa a sua probabilidade de ocorrência, isto é, $$p(x_i)=P(X=x_i)=p_i,\ \ \ i=1,2,...$$ <br> Os valores de uma distribuição de probabilidades devem ser números do intervalo de 0 a 1. A soma de todos os valores de uma distribuição de probabilidade deve ser igual a 1.
+:::
+
+------------------------------------------------------------------------
+
+### Exercícios
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+1.  Um agricultor produz batatas-sementes do tipo I com probabilidade 0,20, do tipo II com probabilidade 0,36, do tipo III com probabilidade 0,28 e do tipo IV com probabilidade 0,16. Sabendo-se que o lucro por caixa do tipo I exportada é de 10 u.m., do tipo II é de 30 u.m., do tipo III é de 20 u.m. e do tipo IV é 15 u.m., qual a distribuição de probabilidade para a variável o lucro (X)?
+:::
+
+------------------------------------------------------------------------
+
+### Valor médio ou esperança matemática
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição:** Dada a v.a.  discreta $X$, assumindo os valores $x_1,...,x_n$, chamamos valor médio ou esperança matemática de $X$ o valor $$E(X)=\sum_{i=1}^{n}x_iP(X=x_i)=\sum_{i=1}^{n}x_ip_i$$
+:::
+
+------------------------------------------------------------------------
+
+### Variância
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição:** Chamamos de variância da v.a. $X$ o valor $$Var(X)=\sum_{i=1}^n\left[x_i-E(X)\right]^2p_i$$ ou $$Var(X)=E(X^2)-E(X)^2$$
+
+-   O devio padrão de $X$, DP(X), é definido como a raiz quadrada positiva da variância.
+:::
+
+------------------------------------------------------------------------
+
+### Exercícios
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+2.  Obtenha a média e a variância da v.a. dos exemplos 1 e 2.
+
+<br>
+
+3.  Obter a média e a variância da v.a. do exercício 1.
+:::
+
+------------------------------------------------------------------------
+
+### Função de distribuição acumulada
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição:** Dada a variável aleatória $X$, chamaremos de função de distribuição acumulada (f.d.a.) ou simplesmente a função de distribuição (f.d) F(x) à função $$F(x)=P(X\leq x).$$
+
+    Observe que o domínio de F é todo o conjunto dos números reais, ao passo que o contradomínio é o intervalo $\left[0,1\right]$.
+:::
+
+------------------------------------------------------------------------
+
+### Exercícios
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+4.  Obtenha a f.d.a. F(x) da v.a. dos exemplos 1 e 2.
+
+<br>
+
+5.  Obtenha a f.d.a. F(Y) da v.a. do exercício 1.
+:::
+
+------------------------------------------------------------------------
+
+### Alguns modelos probabilísticos para variáveis aleatórias Discretas
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Algumas v.a. adaptam-se muito bem a uma série de problemas práticos. Portanto, será apresentado alguns dos principais modelos probabilísticos utilizados para descrever vários fenômenos ou situações reais.
+
+<br>
+
+-   Estes modelos probabilísticos dependem de um ou mais parâmetros.
+:::
+
+------------------------------------------------------------------------
+
+### Principais Distribuições de probabilidades
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Distribuição Uniforme Discreta
+
+-   Distribuição de Bernoulli
+
+-   Distribuição Binomial
+
+-   Distribuição Hipergeométrica
+
+-   Distribuição Geométrica
+
+-   Distribuição de Poisson
+
+-   Distribuição Binomial Negativa
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição de Bernoulli
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Nos experimentos de Bernoulli o espaço amostral é composto por apenas dois resultados possíveis: "sucesso" ou "fracasso".
+
+<br>
+
+-   **Exemplos:**
+
+    -   Lançar uma moeda: o resultado é cara ou não.
+
+    -   Uma semente é escolhida ao acaso de um lote contendo 500 sementes: essa semente germina ou não.
+
+    -   Uma pessoa escolhida ao acaso dentre 1000 é ou não do sexo masculino.
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição de Bernoulli
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Definição:** A variável aleatória X, que assume apenas os valores 0 e 1, com função de probabilidade $(x,p(x))$ tal que 
+
+$$\begin{eqnarray}
+    p(0)&=& P(X=0)=1-p\\
+    p(1)&=&P(X=1)=p
+    \end{eqnarray}$$ 
+    é chamada variável aleatória de Bernoulli.
+
+-   **Notação:** $X\sim Be(p)$.
+
+    <br>
+
+-   **Função de probabilidade:** A função de probabilidade de uma distribuição de Bernoulli é dada por: $$P(X=x)=p^x(1-p)^{1-x}, \ \ x=0;1.$$
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Exemplo 3-** Um dado é lançado: seja a v.a. X ocorrer face 5 ou não. Supondo o dado perfeito, teremos $P(X=0)=5/6$, $P(X=1)=1/6$. 
+
+Calcule a esperança e a variância da v.a. X.
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição Binomial
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+<br>
+
+-   **Definição:** Chama-se de experimento binomial ao experimento:
+
+    1.  que consiste em $n$ ensaios de Bernoulli;
+
+    2.  cujos ensaios são independentes; e
+
+    3.  para o qual a probabilidade de sucesso em cada ensaio é sempre igual a p, $0<p<1$.
+
+<br>
+
+-   **Notação:** $X\sim b(n,p)$.
+:::
+
+------------------------------------------------------------------------
+
+### Exemplos
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Uma moeda é lançada três vezes; qual é a probabilidade de se obter duas caras?
+
+-   Um dado é lançado cinco vezes; qual é a probabilidade de se obter face 5 no máximo três vezes?
+
+-   Dez sementes são extraídas de uma linha de produção, ao acaso, de um lote contendo 500 sementes; qual é a probabilidade de que todas germinam, sabendo-se que 10% das sementes do lote não germinam?
+
+-   Numa criação de coelhos, a taxa de nascimento de machos é de 0,40. Qual a probabilidade de que nasçam pelo menos dois coelhos machos, num dia em que nasceram 19 coelhos?
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Função de probabilidades:** A função de probabilidade de uma variável aleatória X com distribuição binomial b(n,p) é dada por: $$P(X=x)={ n\choose x } p^x(1-p)^{n-x}, \ \ \ x=0,1,...,n.$$
+:::
+
+------------------------------------------------------------------------
+
+### Exercícios
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Um certo tratamento faz com que o poder germinativo das sementes de um certa espécie arbórea aumente de 50% para 70%. Vinte sementes são tratadas, semeadas e após um certo período de tempo, observa-se o número de sementes germinadas. Qual é a probabilidade de que 80% ou mais dessas sementes germinem?
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição de Poisson
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   A distribuição de Poisson é empregada em experimentos nos quais não se está interessado no número de sucesso obtido em n tentativas, como ocorre no caso da distribuição binomial, mas sim no número de sucessos ocorridos durante um intervalo contínuo, que pode ser um intervalo de tempo, espaço, comprimento, área ou volume.
+:::
+
+------------------------------------------------------------------------
+
+### Exemplos
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Número de árvores de um certa espécie em 8 ha de mata.
+
+-   Número de acidentes por dia.
+
+-   Número de clientes por hora.
+
+-   Número de chamadas telefônicas recebidas por minuto.
+
+-   Número de erros em 6 horas.
+
+-   Número insetos capturados em 10 horas.
+:::
+
+------------------------------------------------------------------------
+
+### Distribuição de Poisson
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Função de probabilidades:** Dizemos que a v.a.X tem distribuição de Poisson com parâmetro $\lambda >0$, se $$P(X=x)=\frac{e^{-\lambda}\lambda^x}{x!}, \ \ \ \mbox{se}\ \ x=0,\ 1,\ 2, ...$$
+
+<br>
+
+-   **Notação:** $X \sim Pois(\lambda)$
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Exemplo 4:** Um departamento de conserto de máquinas agrícolas recebe uma média de cinco chamadas por hora. Calcule a probabilidade de que menos de três chamadas sejam recebidas durante uma hora.
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Exemplo 5-** Uma máquina agrícola falha em média uma vez a cada quatro horas de funcionamento. Calcule a probabilidade de:
+
+<br>
+
+         
+a\)  numa hora a maquina falhar menos de 2 vezes.
+
+
+<br>
+
+         
+b\)   em 8 horas de funcionamento a maquina falhar menos de 2 vezes.
+:::
+
+------------------------------------------------------------------------
+
+### Exercícios
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+7.  Dado que um banco recebe em média $\lambda = 6$ cheques sem cobertura por dia, qual é a probabilidade de receber quatro cheques sem cobertura em um dia qualquer?
+
+<br>
+
+8.  Se podemos antecipar $\lambda =5,6$ imperfeições por produto de um determinando material para "big bag" descartáveis, qual é a probabilidade de um produto conter $x=3$ imperfeições?
+:::
+
+------------------------------------------------------------------------
+
+### Relação entre as Distribuições Binomial e Poisson
+
+<br>
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   Quando n é grande e a probabilidade de sucesso (p) é pequena, tal que $np<10$, pode-se aplicar a distribuição de Poisson como aproximação da Binomial. $$b(n,p)\approx \frac{e^{-np}(np)^x}{x!}.$$
+:::
+
+------------------------------------------------------------------------
+
+### Exemplo
+
+::: {style="text-align: justify;font-size: 0.8em;"}
+-   **Exemplos 6:** A probabilidade de uma semente não germinar é de 0,05. Se for plantado 50 sementes, qual a probabilidade de que:
+
+    <br>
+
+    a\) não germine exatamente 4 sementes?
+
+    <br>
+
+    b\) não germine pelo menos 3 sementes?
+:::

@@ -138,8 +138,374 @@ Guilherme Biz
 </div>
 
 </section>
-<section id="indrodução" class="slide level2">
-<h2>Indrodução</h2>
+<section class="slide level2">
+
+<h3 id="introdução---variáveis-aleatórias">Introdução - Variáveis aleatórias</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p>Quantidades associadas aos possíveis resultados de um experimento aleatório são denominadas de <strong>variáveis aleatórias</strong>.</p>
+<p><br></p></li>
+<li><p><strong>Definição</strong>: Uma variável aleatória é uma função que associa, a cada ponto pertencente a um espaço amostral, um único número real.</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplos">Exemplos</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<ol type="a">
+<li><p>O número de plantas sadias colhidas na área útil de uma parcela.</p></li>
+<li><p>O número de insetos capturados numa armadilha.</p></li>
+<li><p>O número de dias da emergência à floração.</p></li>
+<li><p>Rendimento de grãos de híbridos de milho.</p></li>
+<li><p>Altura de plantas.</p></li>
+<li><p>O nível de água em uma represa num dados instante.</p></li>
+<li><p>O número de primogênitos do sexo masculino em dez famílias.</p></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p>Nos exemplos <span class="math inline">\(a\)</span>, <span class="math inline">\(c\)</span> e <span class="math inline">\(g\)</span> os valores assumidos pelas variáveis correspondentes pertencem a um conjunto finito de inteiros não negativos.</p></li>
+<li><p>No exemplo <span class="math inline">\(b\)</span> o conjunto de valores que a variável assume é o conjunto dos inteiros não negativos, que é enumerável e infinito.</p></li>
+<li><p>Nos exemplos <span class="math inline">\(d\)</span>, <span class="math inline">\(e\)</span> e <span class="math inline">\(f\)</span> os valores das variáveis aleatórias podem ser qualquer real não negativo.</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Definição:</strong> As variáveis aleatórias que assumem valores em um conjunto enumerável serão denominadas discretas e aquelas que assumem valores num intervalo da reta real serão denominadas contínuas.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-de-probabilidade-de-variáveis-aleatórias-discretas">Distribuição de probabilidade de variáveis aleatórias discretas</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Definição:</strong> A distribuição de probabilidade de uma variável aleatória discreta <span class="math inline">\(X\)</span>, definida em um espaço amostral <span class="math inline">\(\Omega\)</span>, é uma “tabela” que associa a cada valor de <span class="math inline">\(X\)</span> sua probabilidade.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Exemplo 1</strong>: Uma moeda é lançada duas vezes sobre uma superfície plana. Seja <span class="math inline">\(X\)</span> a função definida no espaço amostral que é igual ao número de caras nos dois lançamentos. A distribuição de probabilidade desta v.a. (X) é:</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplo">Exemplo</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Exemplo 2</strong>: Três sementes são retiradas de uma nova produção de híbridos. Cada semente pode ser classificada como boa (B), se germinar, ou defeituosa (D), se não germinar. Seja Y a variável aleatória que representa o número de sementes defeituosas entre as três selecionadas. Suponha que a proporção de sementes boas produzidas seja de 0,9 e que as retiradas são independentes entre si.</li>
+</ul>
+<p>Determine a distribuição de probabilidade da variável aleatória Y.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Definição</strong>: Chama-se função de probabilidade da v.a. discreta <span class="math inline">\(X\)</span>, que assume os valores <span class="math inline">\(x_1,x_2,...,x_n,...\)</span>, a função <span class="math inline">\(\{(x_i,p(x_i)), i=1,2,...\}\)</span>, que a cada valor de <span class="math inline">\(x_i\)</span> associa a sua probabilidade de ocorrência, isto é, <span class="math display">\[p(x_i)=P(X=x_i)=p_i,\ \ \ i=1,2,...\]</span> <br> Os valores de uma distribuição de probabilidades devem ser números do intervalo de 0 a 1. A soma de todos os valores de uma distribuição de probabilidade deve ser igual a 1.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercícios">Exercícios</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ol type="1">
+<li>Um agricultor produz batatas-sementes do tipo I com probabilidade 0,20, do tipo II com probabilidade 0,36, do tipo III com probabilidade 0,28 e do tipo IV com probabilidade 0,16. Sabendo-se que o lucro por caixa do tipo I exportada é de 10 u.m., do tipo II é de 30 u.m., do tipo III é de 20 u.m. e do tipo IV é 15 u.m., qual a distribuição de probabilidade para a variável o lucro (X)?</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="valor-médio-ou-esperança-matemática">Valor médio ou esperança matemática</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Definição:</strong> Dada a v.a. discreta <span class="math inline">\(X\)</span>, assumindo os valores <span class="math inline">\(x_1,...,x_n\)</span>, chamamos valor médio ou esperança matemática de <span class="math inline">\(X\)</span> o valor <span class="math display">\[E(X)=\sum_{i=1}^{n}x_iP(X=x_i)=\sum_{i=1}^{n}x_ip_i\]</span></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="variância">Variância</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p><strong>Definição:</strong> Chamamos de variância da v.a. <span class="math inline">\(X\)</span> o valor <span class="math display">\[Var(X)=\sum_{i=1}^n\left[x_i-E(X)\right]^2p_i\]</span> ou <span class="math display">\[Var(X)=E(X^2)-E(X)^2\]</span></p></li>
+<li><p>O devio padrão de <span class="math inline">\(X\)</span>, DP(X), é definido como a raiz quadrada positiva da variância.</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercícios-1">Exercícios</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ol start="2" type="1">
+<li>Obtenha a média e a variância da v.a. dos exemplos 1 e 2.</li>
+</ol>
+<p><br></p>
+<ol start="3" type="1">
+<li>Obter a média e a variância da v.a. do exercício 1.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="função-de-distribuição-acumulada">Função de distribuição acumulada</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p><strong>Definição:</strong> Dada a variável aleatória <span class="math inline">\(X\)</span>, chamaremos de função de distribuição acumulada (f.d.a.) ou simplesmente a função de distribuição (f.d) F(x) à função <span class="math display">\[F(x)=P(X\leq x).\]</span></p>
+<p>Observe que o domínio de F é todo o conjunto dos números reais, ao passo que o contradomínio é o intervalo <span class="math inline">\(\left[0,1\right]\)</span>.</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercícios-2">Exercícios</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ol start="4" type="1">
+<li>Obtenha a f.d.a. F(x) da v.a. dos exemplos 1 e 2.</li>
+</ol>
+<p><br></p>
+<ol start="5" type="1">
+<li>Obtenha a f.d.a. F(Y) da v.a. do exercício 1.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="alguns-modelos-probabilísticos-para-variáveis-aleatórias-discretas">Alguns modelos probabilísticos para variáveis aleatórias Discretas</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li>Algumas v.a. adaptam-se muito bem a uma série de problemas práticos. Portanto, será apresentado alguns dos principais modelos probabilísticos utilizados para descrever vários fenômenos ou situações reais.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Estes modelos probabilísticos dependem de um ou mais parâmetros.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="principais-distribuições-de-probabilidades">Principais Distribuições de probabilidades</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p>Distribuição Uniforme Discreta</p></li>
+<li><p>Distribuição de Bernoulli</p></li>
+<li><p>Distribuição Binomial</p></li>
+<li><p>Distribuição Hipergeométrica</p></li>
+<li><p>Distribuição Geométrica</p></li>
+<li><p>Distribuição de Poisson</p></li>
+<li><p>Distribuição Binomial Negativa</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-de-bernoulli">Distribuição de Bernoulli</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li>Nos experimentos de Bernoulli o espaço amostral é composto por apenas dois resultados possíveis: “sucesso” ou “fracasso”.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p><strong>Exemplos:</strong></p>
+<ul>
+<li><p>Lançar uma moeda: o resultado é cara ou não.</p></li>
+<li><p>Uma semente é escolhida ao acaso de um lote contendo 500 sementes: essa semente germina ou não.</p></li>
+<li><p>Uma pessoa escolhida ao acaso dentre 1000 é ou não do sexo masculino.</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-de-bernoulli-1">Distribuição de Bernoulli</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Definição:</strong> A variável aleatória X, que assume apenas os valores 0 e 1, com função de probabilidade <span class="math inline">\((x,p(x))\)</span> tal que</li>
+</ul>
+<p><span class="math display">\[\begin{eqnarray}
+    p(0)&amp;=&amp; P(X=0)=1-p\\
+    p(1)&amp;=&amp;P(X=1)=p
+    \end{eqnarray}\]</span> é chamada variável aleatória de Bernoulli.</p>
+<ul>
+<li><p><strong>Notação:</strong> <span class="math inline">\(X\sim Be(p)\)</span>.</p>
+<p><br></p></li>
+<li><p><strong>Função de probabilidade:</strong> A função de probabilidade de uma distribuição de Bernoulli é dada por: <span class="math display">\[P(X=x)=p^x(1-p)^{1-x}, \ \ x=0;1.\]</span></p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Exemplo 3-</strong> Um dado é lançado: seja a v.a. X ocorrer face 5 ou não. Supondo o dado perfeito, teremos <span class="math inline">\(P(X=0)=5/6\)</span>, <span class="math inline">\(P(X=1)=1/6\)</span>.</li>
+</ul>
+<p>Calcule a esperança e a variância da v.a. X.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-binomial">Distribuição Binomial</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<p><br></p>
+<ul>
+<li><p><strong>Definição:</strong> Chama-se de experimento binomial ao experimento:</p>
+<ol type="1">
+<li><p>que consiste em <span class="math inline">\(n\)</span> ensaios de Bernoulli;</p></li>
+<li><p>cujos ensaios são independentes; e</p></li>
+<li><p>para o qual a probabilidade de sucesso em cada ensaio é sempre igual a p, <span class="math inline">\(0&lt;p&lt;1\)</span>.</p></li>
+</ol></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Notação:</strong> <span class="math inline">\(X\sim b(n,p)\)</span>.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplos-1">Exemplos</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p>Uma moeda é lançada três vezes; qual é a probabilidade de se obter duas caras?</p></li>
+<li><p>Um dado é lançado cinco vezes; qual é a probabilidade de se obter face 5 no máximo três vezes?</p></li>
+<li><p>Dez sementes são extraídas de uma linha de produção, ao acaso, de um lote contendo 500 sementes; qual é a probabilidade de que todas germinam, sabendo-se que 10% das sementes do lote não germinam?</p></li>
+<li><p>Numa criação de coelhos, a taxa de nascimento de machos é de 0,40. Qual a probabilidade de que nasçam pelo menos dois coelhos machos, num dia em que nasceram 19 coelhos?</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Função de probabilidades:</strong> A função de probabilidade de uma variável aleatória X com distribuição binomial b(n,p) é dada por: <span class="math display">\[P(X=x)={ n\choose x } p^x(1-p)^{n-x}, \ \ \ x=0,1,...,n.\]</span></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercícios-3">Exercícios</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li>Um certo tratamento faz com que o poder germinativo das sementes de um certa espécie arbórea aumente de 50% para 70%. Vinte sementes são tratadas, semeadas e após um certo período de tempo, observa-se o número de sementes germinadas. Qual é a probabilidade de que 80% ou mais dessas sementes germinem?</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-de-poisson">Distribuição de Poisson</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li>A distribuição de Poisson é empregada em experimentos nos quais não se está interessado no número de sucesso obtido em n tentativas, como ocorre no caso da distribuição binomial, mas sim no número de sucessos ocorridos durante um intervalo contínuo, que pode ser um intervalo de tempo, espaço, comprimento, área ou volume.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplos-2">Exemplos</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p>Número de árvores de um certa espécie em 8 ha de mata.</p></li>
+<li><p>Número de acidentes por dia.</p></li>
+<li><p>Número de clientes por hora.</p></li>
+<li><p>Número de chamadas telefônicas recebidas por minuto.</p></li>
+<li><p>Número de erros em 6 horas.</p></li>
+<li><p>Número insetos capturados em 10 horas.</p></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="distribuição-de-poisson-1">Distribuição de Poisson</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Função de probabilidades:</strong> Dizemos que a v.a.X tem distribuição de Poisson com parâmetro <span class="math inline">\(\lambda &gt;0\)</span>, se <span class="math display">\[P(X=x)=\frac{e^{-\lambda}\lambda^x}{x!}, \ \ \ \mbox{se}\ \ x=0,\ 1,\ 2, ...\]</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Notação:</strong> <span class="math inline">\(X \sim Pois(\lambda)\)</span></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Exemplo 4:</strong> Um departamento de conserto de máquinas agrícolas recebe uma média de cinco chamadas por hora. Calcule a probabilidade de que menos de três chamadas sejam recebidas durante uma hora.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><strong>Exemplo 5-</strong> Uma máquina agrícola falha em média uma vez a cada quatro horas de funcionamento. Calcule a probabilidade de:</li>
+</ul>
+<p><br></p>
+<p>a) numa hora a maquina falhar menos de 2 vezes.</p>
+<p><br></p>
+<p>b) em 8 horas de funcionamento a maquina falhar menos de 2 vezes.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercícios-4">Exercícios</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ol start="7" type="1">
+<li>Dado que um banco recebe em média <span class="math inline">\(\lambda = 6\)</span> cheques sem cobertura por dia, qual é a probabilidade de receber quatro cheques sem cobertura em um dia qualquer?</li>
+</ol>
+<p><br></p>
+<ol start="8" type="1">
+<li>Se podemos antecipar <span class="math inline">\(\lambda =5,6\)</span> imperfeições por produto de um determinando material para “big bag” descartáveis, qual é a probabilidade de um produto conter <span class="math inline">\(x=3\)</span> imperfeições?</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="relação-entre-as-distribuições-binomial-e-poisson">Relação entre as Distribuições Binomial e Poisson</h3>
+<p><br></p>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li>Quando n é grande e a probabilidade de sucesso (p) é pequena, tal que <span class="math inline">\(np&lt;10\)</span>, pode-se aplicar a distribuição de Poisson como aproximação da Binomial. <span class="math display">\[b(n,p)\approx \frac{e^{-np}(np)^x}{x!}.\]</span></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exemplo-1">Exemplo</h3>
+<div style="text-align: justify;font-size: 0.8em;">
+<ul>
+<li><p><strong>Exemplos 6:</strong> A probabilidade de uma semente não germinar é de 0,05. Se for plantado 50 sementes, qual a probabilidade de que:</p>
+<p><br></p>
+<p>a) não germine exatamente 4 sementes?</p>
+<p><br></p>
+<p>b) não germine pelo menos 3 sementes?</p></li>
+</ul>
+</div>
 
 </section>
     </div>
